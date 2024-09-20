@@ -55,11 +55,11 @@ onMounted(() => {
   <footer class="bg-success">
     <div class="container">
       <section class=" d-flex row justify-content-center">
-            <div class="col-lg-6">
-              <div class=" card mt-3  align-items-center">
-                <div class="fs-3"> Picked Cheese : {{ cheese }} </div> 
-              </div>
-            </div>
+        <div class="col-lg-6">
+          <div class=" card mt-3  align-items-center">
+            <div class="fs-3"> Picked Cheese : {{ cheese }} </div>
+          </div>
+        </div>
       </section>
 
       <section class=" d-flex row">
@@ -70,7 +70,7 @@ onMounted(() => {
                 <label type="text" class="fs-3"> ClickUpgrades </label>
                 <div v-for="upgrade in clickUpgrades" :key="upgrade.id">
                   <button class="btn btn-primary" @click="buyClickUpgrade(upgrade)">
-                {{ upgrade.name }} {{ upgrade.cost }}
+                    {{ upgrade.name }} {{ upgrade.cost }}
                   </button>
                 </div>
               </div>
@@ -81,7 +81,7 @@ onMounted(() => {
                 <label type="text" class="fs-3"> AutoUpgrades </label>
                 <div v-for="upgrade in autoUpgrades" :key="upgrade.id">
                   <button class="btn btn-primary" @click="buyAutoUpgrade(upgrade)">
-                   {{ upgrade.name }} {{ upgrade.cost }}
+                    {{ upgrade.name }} {{ upgrade.cost }}
                   </button>
                 </div>
               </div>
@@ -100,7 +100,6 @@ onMounted(() => {
 .tree-image {
   height: 50vh;
 }
-
 button {
   height: 10vh;
   padding: 10rem;
